@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --red:#CE1126;
+            --red-dark:#8f0c1a;
+            --black:#121212;
+            --gold:#D4AF37;
+            --gold-soft:#f1d98b;
+            --cream:#F3ECDD;
+            --white:#ffffff;
+        }
+        *{box-sizing:border-box;}
+        body{
+            margin:0;
+            min-height:100vh;
+            background:
+                linear-gradient(180deg, rgba(0,0,0,.88), rgba(0,0,0,.88)),
+                repeating-linear-gradient(135deg, #1c1c1c 0 40px, #161616 40px 80px);
+            color:var(--cream);
+            font-family:'Tajawal', sans-serif;
+            text-align:center;
+            line-height:1.7;
+            padding-bottom:3rem;
+        }
+        body::before{
+            content:"";
+            display:block;
+            height:10px;
+            background:linear-gradient(90deg,var(--black) 0 33.3%, var(--white) 33.3% 66.6%, var(--red) 66.6% 100%);
+        }
+        h1{
+            font-family:'Cairo', sans-serif;
+            font-weight:900;
+            font-size:clamp(1.8rem,5vw,2.6rem);
+            color:var(--gold-soft);
+            margin:2.4rem auto 1rem;
+            text-shadow:0 2px 12px rgba(0,0,0,.6);
+        }
+        hr{
+            border:none;
+            height:2px;
+            width:min(90%,500px);
+            margin:0 auto 1.6rem;
+            background:linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        form{
+            max-width:340px;
+            margin:0 auto 1.8rem;
+            background:rgba(255,255,255,.05);
+            border:2px solid var(--gold);
+            border-radius:16px;
+            padding:1.8rem;
+            display:flex;
+            flex-direction:column;
+            gap:1rem;
+            text-align:right;
+            box-shadow:0 12px 32px rgba(0,0,0,.55);
+        }
+        label{
+            font-family:'Cairo', sans-serif;
+            color:var(--gold-soft);
+            font-size:.95rem;
+            font-weight:700;
+        }
+        input{
+            padding:.7rem .9rem;
+            border-radius:8px;
+            border:1px solid var(--gold);
+            background:rgba(0,0,0,.35);
+            color:var(--cream);
+            font-family:'Tajawal', sans-serif;
+            font-size:1rem;
+        }
+        input:focus-visible{
+            outline:2px solid var(--gold);
+        }
+        a{ text-decoration:none; }
+        button{
+            font-family:'Cairo', sans-serif;
+            font-weight:700;
+            font-size:1.05rem;
+            color:var(--black);
+            background:linear-gradient(180deg, var(--gold-soft), var(--gold));
+            border:none;
+            padding:.9rem 2.2rem;
+            border-radius:999px;
+            cursor:pointer;
+            box-shadow:0 6px 18px rgba(212,175,55,.35);
+            transition:transform .15s ease, box-shadow .15s ease;
+        }
+        button:hover{
+            transform:translateY(-3px);
+            box-shadow:0 10px 26px rgba(212,175,55,.5);
+        }
+        button:focus-visible{
+            outline:3px solid var(--red);
+            outline-offset:3px;
+        }
+    </style>
+</head>
+<body>
+    <h1> egypt kora</h1><hr>
+  <form action="">
+<label for="">full name</label>
+<input type="text"> <br>
+<label for="">password</label>
+<input type="password">
+  </form>
+  <a href="index.html"><button>go to web</button></a>
+</body>
+</html>

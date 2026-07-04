@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>egypt world cup </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --red:#CE1126;
+            --red-dark:#8f0c1a;
+            --black:#121212;
+            --gold:#D4AF37;
+            --gold-soft:#f1d98b;
+            --cream:#F3ECDD;
+            --white:#ffffff;
+        }
+        *{box-sizing:border-box;}
+        body{
+            margin:0;
+            min-height:100vh;
+            background:
+                linear-gradient(180deg, rgba(0,0,0,.88), rgba(0,0,0,.88)),
+                repeating-linear-gradient(135deg, #1c1c1c 0 40px, #161616 40px 80px);
+            color:var(--cream);
+            font-family:'Tajawal', sans-serif;
+            text-align:center;
+            line-height:1.7;
+            padding-bottom:3rem;
+        }
+        body::before{
+            content:"";
+            display:block;
+            height:10px;
+            background:linear-gradient(90deg,var(--black) 0 33.3%, var(--white) 33.3% 66.6%, var(--red) 66.6% 100%);
+        }
+        h1{
+            font-family:'Cairo', sans-serif;
+            font-weight:900;
+            font-size:clamp(1.8rem,5vw,2.8rem);
+            color:var(--gold-soft);
+            margin:2.2rem auto .8rem;
+            padding:0 1rem;
+            text-shadow:0 2px 12px rgba(0,0,0,.6);
+        }
+        h3{
+            font-family:'Cairo', sans-serif;
+            font-weight:700;
+            font-size:1.3rem;
+            color:var(--white);
+            margin:2rem auto .6rem;
+            position:relative;
+        }
+        p{
+            max-width:600px;
+            margin:0 auto 1.4rem;
+            color:var(--cream);
+            font-size:1.1rem;
+        }
+        hr{
+            border:none;
+            height:2px;
+            width:min(90%,600px);
+            margin:1.6rem auto;
+            background:linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        a{ text-decoration:none; display:inline-block; }
+        button{
+            font-family:'Cairo', sans-serif;
+            font-weight:700;
+            font-size:1.05rem;
+            color:var(--black);
+            background:linear-gradient(180deg, var(--gold-soft), var(--gold));
+            border:none;
+            padding:.9rem 2.2rem;
+            border-radius:999px;
+            margin:.4rem 0 1.2rem;
+            cursor:pointer;
+            box-shadow:0 6px 18px rgba(212,175,55,.35);
+            transition:transform .15s ease, box-shadow .15s ease;
+        }
+        button:hover{
+            transform:translateY(-3px);
+            box-shadow:0 10px 26px rgba(212,175,55,.5);
+        }
+        button:focus-visible{
+            outline:3px solid var(--red);
+            outline-offset:3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>هل انت مصري ؟؟</h1> <hr>
+    <p>اذا هيا لنري  اثر مصر في كاس عالم 2026</p> 
+    <h3>لاعبين الفريق</h3>
+    <a href="plan.html"><button>الخطه و الفريق </button></a>
+    <h3>اهم الاهداف</h3>    
+    <a href="goals.html"><button>اهم الاهداف</button></a>
+    <h3>الكابتن</h3>
+    <a href="coach.html"><button>الكوتش</button></a>
+    <h1>اللاعبيين</h1>
+    <a href="playrs.html"><button>تفاصيل اللاعبين</button></a>
+    <h1> الاعبين الحاصلين على جائزه  رجل المباراه</h1>
+    <a href="man of the match .html"><button>رجال المباراه</button></a>
+</body>
+</html>

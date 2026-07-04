@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>man of the match</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800;900&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --red:#CE1126;
+            --red-dark:#8f0c1a;
+            --black:#121212;
+            --gold:#D4AF37;
+            --gold-soft:#f1d98b;
+            --cream:#F3ECDD;
+            --white:#ffffff;
+        }
+        *{box-sizing:border-box;}
+        body{
+            margin:0;
+            min-height:100vh;
+            background:
+                linear-gradient(180deg, rgba(0,0,0,.88), rgba(0,0,0,.88)),
+                repeating-linear-gradient(135deg, #1c1c1c 0 40px, #161616 40px 80px);
+            color:var(--cream);
+            font-family:'Tajawal', sans-serif;
+            text-align:center;
+            line-height:1.7;
+            padding-bottom:3rem;
+        }
+        body::before{
+            content:"";
+            display:block;
+            height:10px;
+            background:linear-gradient(90deg,var(--black) 0 33.3%, var(--white) 33.3% 66.6%, var(--red) 66.6% 100%);
+        }
+        h1{
+            font-family:'Cairo', sans-serif;
+            font-weight:800;
+            font-size:clamp(1.2rem,3vw,1.7rem);
+            color:var(--gold-soft);
+            margin:2rem auto .9rem;
+            padding:0 1rem;
+            text-shadow:0 2px 10px rgba(0,0,0,.6);
+        }
+        hr{
+            border:none;
+            height:2px;
+            width:min(90%,600px);
+            margin:1.8rem auto 2.2rem;
+            background:linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+        img{
+            max-width:100%;
+            border-radius:16px;
+            border:4px solid var(--gold);
+            box-shadow:0 12px 32px rgba(0,0,0,.6);
+            margin:.4rem 0 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1> 1- الاعب امام عاشور امام بلجيكا</h1>
+    <img src="img/emo.jpg" alt="emo man" width="400px">
+    <hr> 
+    <h1>2- الفرعون المصري محمد صلاح امام نيوزيلندا</h1>
+    <img src="img/mo.jpg" alt=""> <hr>
+    <h1>3- ثم يعود الفرعون محمد صلاح و ياخذها اما استراليا</h1>
+    <img src="img/mo2.jpg" alt="moo" width="400px">
+</body>
+</html>
